@@ -1,15 +1,13 @@
-#! /usr/bin/env
+#! /usr/bin/env python3
 
-import os
 import argparse
 
 def main():
-    parser = argparse.ArgumentParser(description='Say hello')
+    parser = argparse.ArgumentParser(description='Hello, <NAME>')
     parser.add_argument('-n', '--name', metavar='name',
-                        default='World', help='Name to greet')
+                        default='World', help='<Name to greet>')
     args = parser.parse_args()
     print('Hello, ' + args.name + '!')
 
 if __name__ == '__main__':
     main()
-
